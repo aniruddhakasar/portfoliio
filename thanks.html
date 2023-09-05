@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank-You</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body, html {
+      height: 100%;
+    }
+    .bg-image {
+      background-image: url('background-image.jpg'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+    }
+    .bg-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content {
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .thank-you-heading {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+    .smiley-emoji {
+      font-size: 100px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-image">
+    <div class="bg-overlay">
+      <div class="container">
+        <div class="content">
+          <h1 class="thank-you-heading">Thank You {{ detail_list['name'] }} for Visiting!</h1>
+          <p>We appreciate your time and interest.</p>
+          <div class="smiley-emoji">&#x263A;</div> 
+          <!-- <table class="content" class="container">
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Subject</th>
+            <th>Message</th>
+            <tr>
+              <td>{{ detail_list['name'] }}</td>
+              <td>{{ detail_list['email'] }}</td>
+              <td>{{ detail_list['subject'] }}</td>
+              <td>{{ detail_list['message'] }}</td>
+            </tr>
+          </table> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and jQuery (place these at the end of the body for faster page loading) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
